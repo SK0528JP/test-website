@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #872523;
+    --secondary-color: #f5f5f5;
+    --text-color: #333;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    overflow-x: hidden;
+}
+
+header .menu-bar {
+    background-color: var(--primary-color);
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+header .menu-bar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+header .menu-bar .logo .logo-icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+header .menu-bar nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+header .menu-bar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+header .menu-bar nav a:hover {
+    color: #ffd700;
+}
+
+header .header-image {
+    background: url('header-image.jpg') no-repeat center center/cover;
+    height: 300px;
+    width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.5s ease-in forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
+h1, h2 {
+    opacity: 0;
+    transform: translateX(100%);
+    animation: slideIn 1s ease-out forwards;
+    animation-delay: 1.5s;
+    padding-bottom: 5px;
+    border-bottom: 3px solid var(--primary-color);
+}
+
+@keyframes slideIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+main {
+    padding: 20px;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+h1 {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 30px;
+    color: var(--primary-color);
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.instagram-link {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+    transition: color 0.3s ease;
+}
+
+.instagram-link i {
+    margin-right: 8px;
+}
+
+.instagram-link:hover {
+    color: #ffd700;  /* インスタグラムのロゴのカラー */
+}
