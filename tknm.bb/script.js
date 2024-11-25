@@ -15,6 +15,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // h1, h2のアニメーション開始
     const headings = document.querySelectorAll("h1, h2");
     headings.forEach(heading => {
-        heading.style.animationDelay = "1s";
+        heading.style.animationDelay = "0.75s";
     });
 });
